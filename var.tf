@@ -29,7 +29,7 @@ variable "disable_api_termination"                                    {default =
 variable "ebs_optimized"                                              {default = true}
 variable "instance_ami"                                               {default = "ami-0fa49cc9dc8d62c84"}
 variable "instance_type"                                              {default = "t2.micro"}
-variable "key_pair"{default="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDcYbGVDmJatdd6FfbKbLUAlk+shybq0gZhzS4HY26uMwFlULJXPOYAVAi05BLMioBFSMqYMWDDsC4+E96D9tTO/aZD/MAmgbF8LN6r+Ku9mgIQy47uoUNPBYX5EI8RsY/7LbTILAxvvOQn0btXSDFQ0hpX22REWQGJUyvfASVEP8yLl836o35WvJTHOihv8om/NCeU4+4tr8Eu4z3QMGXJJXCLP0fyizJ2/2eOF2s9EV5AkF96DMj2Cp5vKIPef4EvgPkmUF5O5IbIN2XYBZy4gAENMhM0loBN4IkHiZ3/uT8jYQq1FLKBLpiB/1UmMTRWDkPc1pN9FnDz8zKcEtUx/ikzkiUTPnF5XLzIH/0jMrG/a1fUIlz6p1pDcdmM3hEsxUnCfhdUKaNfyFFAN1hPVDb/wZroh96HttQPTauvDwsyca+9CzR1p9721umnpI1pAy2Nzb/2CoVuZLjM4DmuS4a2XHORo5JPafuZSFOs9NN/KzVF/8mmQSZcluE7H08= radha@AAD-9Q5SXD3"}
+variable "key_pair"{default="key"}
 variable "associate_public_ip_address_pub"                                {default = true}
 variable "instance_desired_cap"  {default =2}
 variable "instance_max_cap" {default = 2}
