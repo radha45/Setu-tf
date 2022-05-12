@@ -6,6 +6,7 @@ resource "random_password" "master"{
 
 resource "aws_secretsmanager_secret" "password" {
   name = "Setu-db-password"
+  recovery_window_in_days = 0
 }
 
 resource "aws_secretsmanager_secret_version" "password" {
@@ -62,7 +63,6 @@ resource "aws_db_instance" "Setu" {
   vpc_security_group_ids = [aws_security_group.private-rds-instance.id]
   db_subnet_group_name = aws_db_subnet_group.private.name
   skip_final_snapshot = true
-#   apply_immediately = true
   port     = 3306
   tags = {
     Name      = "${var.project}-rds"
